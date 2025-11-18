@@ -1,6 +1,6 @@
-# svelte-json-tree
+# @sveltejs/svelte-json-tree
 
-![version](https://img.shields.io/npm/v/svelte-json-tree?style=flat-square) ![MIT License](https://img.shields.io/npm/l/svelte-json-tree?style=flat-square)
+![version](https://img.shields.io/npm/v/@sveltejs/svelte-json-tree?style=flat-square) ![MIT License](https://img.shields.io/npm/l/@sveltejs/svelte-json-tree?style=flat-square)
 
 ![svelte-json-tree](./images/screenshot.png)
 
@@ -14,10 +14,10 @@ Use [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/lang/en) to inst
 
 ```sh
 # npm
-npm install --save svelte-json-tree
+npm install --save @sveltejs/svelte-json-tree
 
 # yarn
-yarn add svelte-json-tree
+yarn add @sveltejs/svelte-json-tree
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ With Svelte:
 
 ```html
 <script>
-  import JSONTree from 'svelte-json-tree';
+  import JSONTree from '@sveltejs/svelte-json-tree';
   // your json data to view
   const value = {
     array: [1, 2, 3],
@@ -43,7 +43,7 @@ With Svelte:
 Without Svelte:
 
 ```js
-const JSONTree = require('svelte-json-tree');
+const JSONTree = require('@sveltejs/svelte-json-tree');
 const jsonTree = new JSONTree({
   target: document.body,
   props: {
@@ -57,7 +57,7 @@ jsonTree.$set({ value: ['1'] });
 
 ## Overriding Styles
 
-**svelte-json-tree** uses the following CSS variables to theme:
+**@sveltejs/svelte-json-tree** uses the following CSS variables to theme:
 
 ```css
 /* color */
@@ -93,4 +93,4 @@ To overwrite the style, specify the css variables on the parent:
 
 ## License
 
-[MIT](https://github.com/tanhauhau/svelte-json-tree/blob/master/LICENSE)
+[MIT](https://github.com/sveltejs/svelte-json-tree/blob/master/LICENSE)

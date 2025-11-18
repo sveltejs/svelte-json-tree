@@ -9,20 +9,20 @@
 With `npm`
 
 ```sh
-npm install svelte-json-tree
+npm install @sveltejs/svelte-json-tree
 ```
 
 With `yarn`
 
 ```sh
-yarn add svelte-json-tree
+yarn add @sveltejs/svelte-json-tree
 ```
 
 ## Use it
 
 ```svelte
 <script>
-  import JsonTree from 'svelte-json-tree';
+  import JsonTree from '@sveltejs/svelte-json-tree';
   let value = {
     message: 'hello world',
     item: [1, 2, 3],
@@ -214,10 +214,10 @@ You can set `shouldShowPreview` to `false` to hide it.
 
 ## ESM / Standalone / UMD
 
-You can import `svelte-json-tree` directly, without having to setting up plugins to transform `.svelte` code
+You can import `@sveltejs/svelte-json-tree` directly, without having to setting up plugins to transform `.svelte` code
 
 ```js
-import Jsontree from 'svelte-json-tree';
+import Jsontree from '@sveltejs/svelte-json-tree';
 
 new Jsontree({
   target: document.body,
@@ -228,7 +228,7 @@ new Jsontree({
 If you want to use it without installing `svelte`, use the **standalone** version
 
 ```js
-import Jsontree from 'svelte-json-tree/standalone';
+import Jsontree from '@sveltejs/svelte-json-tree/standalone';
 
 new Jsontree({
   target: document.body,
